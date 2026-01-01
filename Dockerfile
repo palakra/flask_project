@@ -3,8 +3,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 COPY requirements.txt
-RUN pip install --no-caxhe-dir -r
-requirements.txt
+RUN pip install --no-caxhe-dir -r requirements.txt
 
 COPY . . 
 
